@@ -5,7 +5,7 @@ object Main {
        if (args.isNotEmpty()) {
            popularCourses(args[0].toInt())
        } else {
-           println("Need number.")
+           println("Need a number.")
        }
    }
 }

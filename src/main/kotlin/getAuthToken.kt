@@ -6,7 +6,11 @@ import okhttp3.FormBody
 import okhttp3.OkHttpClient
 import okhttp3.Request
 
-
+/*
+ * Получение токена для авторизации Stepik
+ * @param httpClient: OkHttpClient - http клиент
+ * @return token: String - токен
+ */
 fun getAuthTokenAsync(httpClient: OkHttpClient): Deferred<String> = async {
     val client_id = "OieK1UdXHX6H7vYuP7qJsh8pZydQKYjA8MvlY3PE"
     val client_secret = "D8UHW7Q70vediWFmNU4iwrnxrObRx2qGXIHeX5mBfmoSQ0nLC9aGXc5xx46vXNzD5egqomkzFaoazHQaqUPlSufwbccuyRLQ6cmZvkrT9e3kIXPGgsdcjHgMMdmeU6CC"
